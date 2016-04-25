@@ -22,7 +22,14 @@ public class PlayerTest {
 
     @Test
     public void testGetFigure() throws Exception {
+        final Figure inputValue = Figure.X;
+        final Figure expectedValue = inputValue;
+        Player player = new Player(null,inputValue);
 
+        final Figure actualValue = player.getFigure();
+
+        assertEquals(expectedValue,actualValue);
     }
+
 
 }
