@@ -20,7 +20,7 @@ public class Field {
     }
 
     public void setFigure (final Point point,final Figure figure) {
-        field[][]
+        field[point.x][point.y]=figure;
     }
 
 }
